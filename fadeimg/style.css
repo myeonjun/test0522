@@ -1,0 +1,65 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    max-width: 1920px;
+    margin: 0 auto; /* 상하 마진 0, 좌우 마진 자동 */
+    font-family: 'Noto Sans KR', sans-serif; /* 모든 텍스트에 Noto Sans KR 폰트 적용 */
+    line-height: 1.6;
+    overflow-x: hidden; /* 가로 스크롤바 숨기기 */
+    overflow-y: hidden; /* 세로 스크롤바 숨기기 */
+  }
+  
+  /* 컨테이너 스타일 */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* 헤더 스타일 */
+  header {
+    background: transparent; /* 배경을 투명하게 설정 */
+    padding: 10px 0;
+    border-bottom: 1px solid transparent; /* 하단 테두리도 투명하게 설정 */
+    font-family: 'Jua', sans-serif; /* 헤더에 Jua 폰트 적용 */
+  }
+  
+  header .logo {
+    width: 120px; /* 로고 크기 조정 */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 20px; /* 로고와 네비게이션 사이 간격 조정 */
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  
+  header nav ul li {
+    margin-left: 20px; /* 아이템 간 간격 조정 */
+  }
+  
+  header nav ul li:first-child {
+    margin-left: 0; /* 첫 번째 아이템은 마진 제거 */
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+    font-size: 1.2em; /* 폰트 크기 증가 */
+    padding: 10px 15px; /* 패딩 추가 */
+  }
+  
+  header nav ul li a:hover {
+    color: #000000;
+  }
